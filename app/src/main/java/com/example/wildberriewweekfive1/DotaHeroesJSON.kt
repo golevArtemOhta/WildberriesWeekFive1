@@ -1,6 +1,5 @@
 package com.example.wildberriewweekfive1
 
-import android.os.Parcelable
 import com.squareup.moshi.JsonClass
 
 

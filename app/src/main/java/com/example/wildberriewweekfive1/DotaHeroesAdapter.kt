@@ -40,7 +40,8 @@ class DotaHeroesAdapter : RecyclerView.Adapter<DotaHeroesAdapter.DotaHeroesHolde
 
                     dotaHeroFullInfoFragment.arguments = bundle
                     activity.supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment, dotaHeroFullInfoFragment).addToBackStack(null).commit()
+                        .replace(R.id.fragment, dotaHeroFullInfoFragment).addToBackStack(null)
+                        .commit()
 
                 }
             })
@@ -66,7 +67,6 @@ class DotaHeroesAdapter : RecyclerView.Adapter<DotaHeroesAdapter.DotaHeroesHolde
     fun getDotaHeroesData(dotaHeroes: List<DotaHeroesJSON>) {
         DotaHeroesList.addAll(dotaHeroes)
     }
-
 
 
 }
